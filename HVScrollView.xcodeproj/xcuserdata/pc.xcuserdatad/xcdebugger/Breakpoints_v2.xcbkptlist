@@ -9,13 +9,27 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HVScrollView/SPPageMenu/TouchActionScrollView.m"
-            timestampString = "553796358.7647851"
+            filePath = "HVScrollView/SPPageMenu/SPPageMenu.m"
+            timestampString = "553935647.641319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "-touchesMoved:withEvent:"
+            startingLineNumber = "495"
+            endingLineNumber = "495">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SPPageMenu/SPPageMenu.m"
+            timestampString = "553927905.66195"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
+            landmarkName = "-buttonInPageMenuClicked:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,11 +40,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HVScrollView/SPPageMenu/SPPageMenu.m"
-            timestampString = "553796358.764889"
+            timestampString = "553935647.642411"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1042"
-            endingLineNumber = "1042"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
+            landmarkName = "-buttonInPageMenuClicked:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HVScrollView/SPPageMenu/SPPageMenu.m"
+            timestampString = "553935647.6429811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "410"
+            endingLineNumber = "410"
             landmarkName = "-layoutSubviews"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,12 +72,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HVScrollView/SPPageMenu/SPPageMenu.m"
-            timestampString = "553796358.765437"
+            timestampString = "553935647.643692"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "579"
-            endingLineNumber = "579"
-            landmarkName = "-initialize"
+            startingLineNumber = "387"
+            endingLineNumber = "387"
+            landmarkName = "-layoutSubviews"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -1,14 +1,14 @@
 //
-//  TouchActionScrollView.m
+//  ScrollviewFunction.m
 //  HVScrollView
 //
-//  Created by pc on 2018/7/20.
+//  Created by pc on 2018/7/21.
 //  Copyright © 2018年 iDress. All rights reserved.
 //
 
-#import "TouchActionScrollView.h"
+#import "ScrollviewFunction.h"
 
-@implementation TouchActionScrollView
+@implementation ScrollviewFunction
 //重新定义，拖动的函数，可以避开scrollview的屏蔽
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [[self nextResponder] touchesBegan:touches withEvent:event];
@@ -33,7 +33,7 @@
     
     //CGPoint preP=[touch pr]
     NSLog(@"move.y: %f",self.FscrollMovepoint.y);
-
+    
     //通知启动
     // 1.添加字典, 将数据包到字典中
     NSDictionary *dict =[[NSDictionary alloc] initWithObjectsAndKeys:@"name",@"xiaoming",@"111401",@"number", nil];
@@ -46,12 +46,5 @@
     [[NSNotificationCenter defaultCenter] postNotification:notification];
     
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end

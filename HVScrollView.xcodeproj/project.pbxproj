@@ -14,7 +14,6 @@
 		0944F7CB1F0F2925003856A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0944F7C91F0F2925003856A5 /* LaunchScreen.storyboard */; };
 		0944F7D61F0F2925003856A5 /* HVScrollView_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0944F7D51F0F2925003856A5 /* HVScrollView_____Tests.m */; };
 		0944F7E11F0F2925003856A5 /* HVScrollView_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0944F7E01F0F2925003856A5 /* HVScrollView_____UITests.m */; };
-		0944F7F21F0F295E003856A5 /* MyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0944F7EF1F0F295D003856A5 /* MyHeaderView.m */; };
 		0944F7F31F0F295E003856A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0944F7F11F0F295D003856A5 /* ViewController.m */; };
 		0944F8361F0F2984003856A5 /* UINavigationBar+NavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 0944F7F61F0F2984003856A5 /* UINavigationBar+NavAlpha.m */; };
 		0944F8371F0F2984003856A5 /* UINavigationController+NavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 0944F7F81F0F2984003856A5 /* UINavigationController+NavAlpha.m */; };
@@ -25,7 +24,6 @@
 		0944F8501F0F2984003856A5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0944F8331F0F2984003856A5 /* SecondViewController.m */; };
 		0944F8511F0F2984003856A5 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0944F8351F0F2984003856A5 /* ThirdViewController.m */; };
 		4F5E9C8520ECE5E700A0700A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F5E9C8420ECE5E700A0700A /* Default-568h@2x.png */; };
-		4FD16AE52102326400E2F266 /* TouchActionScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD16AE42102326400E2F266 /* TouchActionScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +58,6 @@
 		0944F7DC1F0F2925003856A5 /* HVScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HVScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0944F7E01F0F2925003856A5 /* HVScrollView_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HVScrollView_____UITests.m"; sourceTree = "<group>"; };
 		0944F7E21F0F2925003856A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0944F7EE1F0F295D003856A5 /* MyHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHeaderView.h; sourceTree = "<group>"; };
-		0944F7EF1F0F295D003856A5 /* MyHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHeaderView.m; sourceTree = "<group>"; };
 		0944F7F01F0F295D003856A5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0944F7F11F0F295D003856A5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0944F7F51F0F2984003856A5 /* UINavigationBar+NavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NavAlpha.h"; sourceTree = "<group>"; };
@@ -82,8 +78,6 @@
 		0944F8351F0F2984003856A5 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		0944F8521F0F29AE003856A5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		4F5E9C8420ECE5E700A0700A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4FD16AE32102326400E2F266 /* TouchActionScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchActionScrollView.h; sourceTree = "<group>"; };
-		4FD16AE42102326400E2F266 /* TouchActionScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchActionScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,15 +129,11 @@
 		0944F7BA1F0F2925003856A5 /* HVScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				0944F7BE1F0F2925003856A5 /* AppDelegate.h */,
-				0944F7BF1F0F2925003856A5 /* AppDelegate.m */,
 				0944F7F01F0F295D003856A5 /* ViewController.h */,
 				0944F7F11F0F295D003856A5 /* ViewController.m */,
-				0944F7EE1F0F295D003856A5 /* MyHeaderView.h */,
-				0944F7EF1F0F295D003856A5 /* MyHeaderView.m */,
+				0944F8281F0F2984003856A5 /* SPPageMenu */,
 				0944F82B1F0F2984003856A5 /* SubControllers */,
 				0944F7F41F0F2984003856A5 /* Category */,
-				0944F8281F0F2984003856A5 /* SPPageMenu */,
 				0944F7C41F0F2925003856A5 /* Main.storyboard */,
 				0944F7C71F0F2925003856A5 /* Assets.xcassets */,
 				0944F7C91F0F2925003856A5 /* LaunchScreen.storyboard */,
@@ -156,6 +146,8 @@
 		0944F7BB1F0F2925003856A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0944F7BE1F0F2925003856A5 /* AppDelegate.h */,
+				0944F7BF1F0F2925003856A5 /* AppDelegate.m */,
 				0944F7BC1F0F2925003856A5 /* main.m */,
 				0944F8521F0F29AE003856A5 /* PrefixHeader.pch */,
 			);
@@ -196,8 +188,6 @@
 			children = (
 				0944F8291F0F2984003856A5 /* SPPageMenu.h */,
 				0944F82A1F0F2984003856A5 /* SPPageMenu.m */,
-				4FD16AE32102326400E2F266 /* TouchActionScrollView.h */,
-				4FD16AE42102326400E2F266 /* TouchActionScrollView.m */,
 			);
 			path = SPPageMenu;
 			sourceTree = "<group>";
@@ -357,7 +347,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0944F8501F0F2984003856A5 /* SecondViewController.m in Sources */,
-				0944F7F21F0F295E003856A5 /* MyHeaderView.m in Sources */,
 				0944F8361F0F2984003856A5 /* UINavigationBar+NavAlpha.m in Sources */,
 				0944F8371F0F2984003856A5 /* UINavigationController+NavAlpha.m in Sources */,
 				0944F7C01F0F2925003856A5 /* AppDelegate.m in Sources */,
@@ -368,7 +357,6 @@
 				0944F8511F0F2984003856A5 /* ThirdViewController.m in Sources */,
 				0944F84E1F0F2984003856A5 /* FirstViewController.m in Sources */,
 				0944F84F1F0F2984003856A5 /* FourViewController.m in Sources */,
-				4FD16AE52102326400E2F266 /* TouchActionScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
