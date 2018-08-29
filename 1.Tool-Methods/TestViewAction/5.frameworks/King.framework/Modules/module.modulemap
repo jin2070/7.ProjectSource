@@ -1,0 +1,6 @@
+framework module King {
+  umbrella header "King.h"
+
+  export *
+  module * { export * }
+}
