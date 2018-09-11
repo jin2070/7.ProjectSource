@@ -7,12 +7,13 @@
 //
 
 #import "ViewController.h"
-//1.TouchViewfromScroll
-
-//2.Delegate
+//1.RunLoop
+#import "RunloopViewClass.h"
+//2.Thread
+#import "ThreadStudy.h"
+//3.Delegate
 #import "UIVDelegate.h"
-//3.Category
-#import "UIViewController+Alpha.h"
+
 //4.Block
 #import "BlockSample.h"
 //5.Frameworks
@@ -21,11 +22,8 @@
 
 
 @interface ViewController ()<UIScrollViewDelegate,DaChuDelegate>
-
 @property(nonatomic,strong)BlockSample *blocksample;//4.Block
 @property (nonatomic, strong) UIScrollView *scrollView;
-
-
 @end
 
 @implementation ViewController
@@ -33,15 +31,22 @@
 -(void)viewDidLoad
 {
  
-  //  DrawingSomothing *drawsome=[[DrawingSomothing alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     [self initializeClass:2];
 }
 -(void)initializeClass:(NSInteger)select
 {
     switch (select) {
-
-        case 2://Delegate
-            [self B_ResturandOpen];
+        case 1://1.RunLoop
+            [self A_RunloopCause];
+            break;
+        case 2:
+            [self B_Thread];
+            break;
+        case 3://Delegate
+            [self C_ResturandOpen];
+            break;
+        case 4: //Block
+            [self D_Block];
             break;
         case 5://5.Frameworks
             [self E_Framework];
@@ -53,10 +58,25 @@
     
 }
 
-//1.TouchViewfromScroll
+//1.RunLoop
+-(void)A_RunloopCause
+{
+    RunloopViewClass *runlooViewclass=[[RunloopViewClass alloc] initWithFrame:CGRectMake(30, 50, 300, 350)];
+                                       runlooViewclass.backgroundColor=[UIColor grayColor];
+    [runlooViewclass CreateAThread];
+    [self.view addSubview:runlooViewclass];
+}
+//2.Thread
+-(void)B_Thread
+{
+    ThreadStudy *threadView=[[ThreadStudy alloc] initWithFrame:CGRectMake(30, 50, 300, 400)];
+    threadView.backgroundColor=[UIColor blueColor];
+    [self.view addSubview:threadView];
 
-//2.Delegate
-- (void)B_ResturandOpen{
+}
+
+//3.Delegate
+- (void)C_ResturandOpen{
     NSLog(@"新的一天开始了");
     
     UIVDelegate *resturand = [[UIVDelegate alloc] initWithFrame:CGRectMake(30, 60, 300, 400)];
@@ -73,7 +93,13 @@
 {
     NSLog(@"上菜前倒茶");//这里可以通知服务员去倒水了
 }
-
+//4.Block
+-(void)D_Block
+{
+    BlockSample *blocksample=[[BlockSample alloc] init];
+    [blocksample runBlockFunction];
+    [blocksample testBlock];
+}
 
 //5.Frameworks
 -(void)E_Framework

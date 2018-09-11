@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F1AC23F2135A01D00CF8A39 /* DrawingMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AC23E2135A01D00CF8A39 /* DrawingMethod.m */; };
 		4F1AC2412135A10300CF8A39 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1AC2402135A10200CF8A39 /* Default-568h@2x.png */; };
-		4F1AC2482135A29800CF8A39 /* ButtonActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AC2472135A29800CF8A39 /* ButtonActions.m */; };
-		4F2441DC212C46F600581183 /* YuXinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2441DB212C46F600581183 /* YuXinSDK.framework */; };
-		4F24420A212C556100581183 /* King.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F244209212C556000581183 /* King.framework */; };
-		4F2EFED0210F692800E257C6 /* UIScrollView+TouchDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2EFECF210F692800E257C6 /* UIScrollView+TouchDraw.m */; };
+		4F1AC25C21381AFA00CF8A39 /* NsstringTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AC25B21381AFA00CF8A39 /* NsstringTools.m */; };
+		4F1AC25F21382BA200CF8A39 /* NSarrayTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AC25E21382BA200CF8A39 /* NSarrayTools.m */; };
+		4F1AC262213EA5DB00CF8A39 /* NSDictionaryTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AC261213EA5DB00CF8A39 /* NSDictionaryTools.m */; };
 		4F3050022100630600C33F1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3050012100630600C33F1B /* AppDelegate.m */; };
 		4F3050052100630600C33F1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3050042100630600C33F1B /* ViewController.m */; };
 		4F3050082100630600C33F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3050062100630600C33F1B /* Main.storyboard */; };
@@ -21,12 +19,6 @@
 		4F3050102100630900C33F1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F30500F2100630900C33F1B /* main.m */; };
 		4F30501A2100630900C33F1B /* TestViewActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3050192100630900C33F1B /* TestViewActionTests.m */; };
 		4F3050252100630900C33F1B /* TestViewActionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3050242100630900C33F1B /* TestViewActionUITests.m */; };
-		4F305041210179BB00C33F1B /* TouchViewfromScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F305040210179BB00C33F1B /* TouchViewfromScroll.m */; };
-		4F4C12B621105274006A7A62 /* UIVDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C12B521105274006A7A62 /* UIVDelegate.m */; };
-		4F821EEC210E1400001B2D42 /* BlockSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F821EEB210E1400001B2D42 /* BlockSample.m */; };
-		4F821EF4210EB5E6001B2D42 /* UINavigationBar+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F821EF3210EB5E6001B2D42 /* UINavigationBar+Alpha.m */; };
-		4F821EF7210EB60C001B2D42 /* UIViewController+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F821EF6210EB60C001B2D42 /* UIViewController+Alpha.m */; };
-		4FC2387921167DC400494B07 /* Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2387821167DC400494B07 /* Base.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,15 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4F1AC23D2135A01D00CF8A39 /* DrawingMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingMethod.h; sourceTree = "<group>"; };
-		4F1AC23E2135A01D00CF8A39 /* DrawingMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingMethod.m; sourceTree = "<group>"; };
 		4F1AC2402135A10200CF8A39 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4F1AC2462135A29800CF8A39 /* ButtonActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonActions.h; sourceTree = "<group>"; };
-		4F1AC2472135A29800CF8A39 /* ButtonActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonActions.m; sourceTree = "<group>"; };
-		4F2441DB212C46F600581183 /* YuXinSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YuXinSDK.framework; sourceTree = "<group>"; };
-		4F244209212C556000581183 /* King.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = King.framework; sourceTree = "<group>"; };
-		4F2EFECE210F692800E257C6 /* UIScrollView+TouchDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TouchDraw.h"; sourceTree = "<group>"; };
-		4F2EFECF210F692800E257C6 /* UIScrollView+TouchDraw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TouchDraw.m"; sourceTree = "<group>"; };
+		4F1AC25A21381AFA00CF8A39 /* NsstringTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NsstringTools.h; sourceTree = "<group>"; };
+		4F1AC25B21381AFA00CF8A39 /* NsstringTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NsstringTools.m; sourceTree = "<group>"; };
+		4F1AC25D21382BA200CF8A39 /* NSarrayTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSarrayTools.h; sourceTree = "<group>"; };
+		4F1AC25E21382BA200CF8A39 /* NSarrayTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSarrayTools.m; sourceTree = "<group>"; };
+		4F1AC260213EA5DB00CF8A39 /* NSDictionaryTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDictionaryTools.h; sourceTree = "<group>"; };
+		4F1AC261213EA5DB00CF8A39 /* NSDictionaryTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryTools.m; sourceTree = "<group>"; };
 		4F304FFD2100630600C33F1B /* TestViewAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestViewAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3050002100630600C33F1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F3050012100630600C33F1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,18 +62,6 @@
 		4F3050202100630900C33F1B /* TestViewActionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestViewActionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3050242100630900C33F1B /* TestViewActionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewActionUITests.m; sourceTree = "<group>"; };
 		4F3050262100630900C33F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F30503F210179BB00C33F1B /* TouchViewfromScroll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchViewfromScroll.h; sourceTree = "<group>"; };
-		4F305040210179BB00C33F1B /* TouchViewfromScroll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchViewfromScroll.m; sourceTree = "<group>"; };
-		4F4C12B421105274006A7A62 /* UIVDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIVDelegate.h; sourceTree = "<group>"; };
-		4F4C12B521105274006A7A62 /* UIVDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIVDelegate.m; sourceTree = "<group>"; };
-		4F821EEA210E1400001B2D42 /* BlockSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockSample.h; sourceTree = "<group>"; };
-		4F821EEB210E1400001B2D42 /* BlockSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockSample.m; sourceTree = "<group>"; };
-		4F821EF2210EB5E6001B2D42 /* UINavigationBar+Alpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Alpha.h"; sourceTree = "<group>"; };
-		4F821EF3210EB5E6001B2D42 /* UINavigationBar+Alpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Alpha.m"; sourceTree = "<group>"; };
-		4F821EF5210EB60C001B2D42 /* UIViewController+Alpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alpha.h"; sourceTree = "<group>"; };
-		4F821EF6210EB60C001B2D42 /* UIViewController+Alpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alpha.m"; sourceTree = "<group>"; };
-		4FC2387721167DC400494B07 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
-		4FC2387821167DC400494B07 /* Base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F2441DC212C46F600581183 /* YuXinSDK.framework in Frameworks */,
-				4F24420A212C556100581183 /* King.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,73 +89,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F1AC237213592CF00CF8A39 /* 1.TouchViewfromScroll */ = {
+		4F1AC237213592CF00CF8A39 /* 1.NSString */ = {
 			isa = PBXGroup;
 			children = (
-				4FC2387721167DC400494B07 /* Base.h */,
-				4FC2387821167DC400494B07 /* Base.m */,
-				4F30503F210179BB00C33F1B /* TouchViewfromScroll.h */,
-				4F305040210179BB00C33F1B /* TouchViewfromScroll.m */,
+				4F1AC25A21381AFA00CF8A39 /* NsstringTools.h */,
+				4F1AC25B21381AFA00CF8A39 /* NsstringTools.m */,
 			);
-			path = 1.TouchViewfromScroll;
+			path = 1.NSString;
 			sourceTree = "<group>";
 		};
-		4F1AC238213592F400CF8A39 /* 2.Delegate */ = {
+		4F1AC238213592F400CF8A39 /* 2.NSArray */ = {
 			isa = PBXGroup;
 			children = (
-				4F4C12B421105274006A7A62 /* UIVDelegate.h */,
-				4F4C12B521105274006A7A62 /* UIVDelegate.m */,
+				4F1AC25D21382BA200CF8A39 /* NSarrayTools.h */,
+				4F1AC25E21382BA200CF8A39 /* NSarrayTools.m */,
 			);
-			path = 2.Delegate;
+			path = 2.NSArray;
 			sourceTree = "<group>";
 		};
-		4F1AC2392135930300CF8A39 /* 3.Category */ = {
+		4F1AC2392135930300CF8A39 /* 3.NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				4F2EFECE210F692800E257C6 /* UIScrollView+TouchDraw.h */,
-				4F2EFECF210F692800E257C6 /* UIScrollView+TouchDraw.m */,
-				4F821EF2210EB5E6001B2D42 /* UINavigationBar+Alpha.h */,
-				4F821EF3210EB5E6001B2D42 /* UINavigationBar+Alpha.m */,
-				4F821EF5210EB60C001B2D42 /* UIViewController+Alpha.h */,
-				4F821EF6210EB60C001B2D42 /* UIViewController+Alpha.m */,
+				4F1AC260213EA5DB00CF8A39 /* NSDictionaryTools.h */,
+				4F1AC261213EA5DB00CF8A39 /* NSDictionaryTools.m */,
 			);
-			path = 3.Category;
-			sourceTree = "<group>";
-		};
-		4F1AC23A2135930D00CF8A39 /* 4.Block */ = {
-			isa = PBXGroup;
-			children = (
-				4F821EEA210E1400001B2D42 /* BlockSample.h */,
-				4F821EEB210E1400001B2D42 /* BlockSample.m */,
-			);
-			path = 4.Block;
-			sourceTree = "<group>";
-		};
-		4F1AC23B213595B400CF8A39 /* 5.frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4F2441DB212C46F600581183 /* YuXinSDK.framework */,
-				4F244209212C556000581183 /* King.framework */,
-			);
-			path = 5.frameworks;
-			sourceTree = "<group>";
-		};
-		4F1AC23C21359FEA00CF8A39 /* 6.Drawing */ = {
-			isa = PBXGroup;
-			children = (
-				4F1AC23D2135A01D00CF8A39 /* DrawingMethod.h */,
-				4F1AC23E2135A01D00CF8A39 /* DrawingMethod.m */,
-			);
-			path = 6.Drawing;
-			sourceTree = "<group>";
-		};
-		4F1AC2422135A16500CF8A39 /* 7.buttons */ = {
-			isa = PBXGroup;
-			children = (
-				4F1AC2462135A29800CF8A39 /* ButtonActions.h */,
-				4F1AC2472135A29800CF8A39 /* ButtonActions.m */,
-			);
-			path = 7.buttons;
+			path = 3.NSDictionary;
 			sourceTree = "<group>";
 		};
 		4F304FF42100630600C33F1B = {
@@ -208,13 +142,9 @@
 			children = (
 				4F3050032100630600C33F1B /* ViewController.h */,
 				4F3050042100630600C33F1B /* ViewController.m */,
-				4F1AC237213592CF00CF8A39 /* 1.TouchViewfromScroll */,
-				4F1AC238213592F400CF8A39 /* 2.Delegate */,
-				4F1AC2392135930300CF8A39 /* 3.Category */,
-				4F1AC23A2135930D00CF8A39 /* 4.Block */,
-				4F1AC23B213595B400CF8A39 /* 5.frameworks */,
-				4F1AC23C21359FEA00CF8A39 /* 6.Drawing */,
-				4F1AC2422135A16500CF8A39 /* 7.buttons */,
+				4F1AC237213592CF00CF8A39 /* 1.NSString */,
+				4F1AC238213592F400CF8A39 /* 2.NSArray */,
+				4F1AC2392135930300CF8A39 /* 3.NSDictionary */,
 				4F30503821006A5300C33F1B /* supporfiles */,
 				4F3050092100630900C33F1B /* Assets.xcassets */,
 				4F30500E2100630900C33F1B /* Info.plist */,
@@ -383,18 +313,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FC2387921167DC400494B07 /* Base.m in Sources */,
-				4F1AC2482135A29800CF8A39 /* ButtonActions.m in Sources */,
-				4F821EF7210EB60C001B2D42 /* UIViewController+Alpha.m in Sources */,
-				4F4C12B621105274006A7A62 /* UIVDelegate.m in Sources */,
-				4F821EEC210E1400001B2D42 /* BlockSample.m in Sources */,
-				4F2EFED0210F692800E257C6 /* UIScrollView+TouchDraw.m in Sources */,
 				4F3050052100630600C33F1B /* ViewController.m in Sources */,
-				4F305041210179BB00C33F1B /* TouchViewfromScroll.m in Sources */,
 				4F3050102100630900C33F1B /* main.m in Sources */,
-				4F821EF4210EB5E6001B2D42 /* UINavigationBar+Alpha.m in Sources */,
 				4F3050022100630600C33F1B /* AppDelegate.m in Sources */,
-				4F1AC23F2135A01D00CF8A39 /* DrawingMethod.m in Sources */,
+				4F1AC25C21381AFA00CF8A39 /* NsstringTools.m in Sources */,
+				4F1AC262213EA5DB00CF8A39 /* NSDictionaryTools.m in Sources */,
+				4F1AC25F21382BA200CF8A39 /* NSarrayTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +491,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestViewAction",
-					"$(PROJECT_DIR)/TestViewAction/5.frameworks/YuXinSDK.framework/Headers",
 				);
 				INFOPLIST_FILE = TestViewAction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -589,7 +512,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestViewAction",
-					"$(PROJECT_DIR)/TestViewAction/5.frameworks/YuXinSDK.framework/Headers",
 				);
 				INFOPLIST_FILE = TestViewAction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

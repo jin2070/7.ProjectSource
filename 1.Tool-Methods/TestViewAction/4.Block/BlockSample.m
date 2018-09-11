@@ -8,6 +8,7 @@
 //测试block
 #import "BlockSample.h"
 
+typedef int(^hellloBlock)(int,int);
 @implementation BlockSample
 -(instancetype)init
 {
@@ -23,17 +24,14 @@
         return num * multiplier;
     };
      myBlock(2);
-    
-  //  CYAddBlock addBlock = ^(int a, int b) {
-  //      return a*b;
-  //  };
-   // addBlock(1,2);
-  //  NSLog(@"i am from block %d",addBlock(8765,25623));
+    hellloBlock helloblock=^(int i,int j){
+        return i*j;
+    };
+    helloblock(5,5);
+  //hellloBlock helloblock=
+   NSLog(@"i am from block %d",helloblock(5,6));
 }
-//----使用block参数
-- (void)startWithBlock:(void(^)(void))block {
-    block();
-}
+
 
 void (^one) (void);//没有返回值，没有输入参数；
 int (^two) (void);//有返回值，没有输入参数；
@@ -43,22 +41,22 @@ int (^four) (int ,int);//有返回值，有输入参数；
 - (void)testBlock {
     //定义闭包函数；
     one = ^(void){
-     //   NSLog(@"执行了one");
+        NSLog(@"执行了one");
     };
     one = ^(void){
-   //     NSLog(@"repeat assign number");
+        NSLog(@"repeat assign number");
     };
     two = ^(void){
-    //    NSLog(@"执行了two");
+        NSLog(@"执行了two");
         return 2;
     };
     
     three = ^(int a){
-    //    NSLog(@"执行了three");
+        NSLog(@"执行了three");
     };
     
     four = ^(int a,int b){
-  //      NSLog(@"执行了four");
+        NSLog(@"执行了four, 第 %d 个",a*b);
         return a + b;
     };
     
@@ -82,6 +80,9 @@ int (^four) (int ,int);//有返回值，有输入参数；
      //   NSLog(@"%@,number is %d",strBlock,c);
     }];
 }
-
+//----使用block参数
+- (void)startWithBlock:(void(^)(void))block {
+    block();
+}
 
 @end

@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4F1AC2412135A10300CF8A39 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1AC2402135A10200CF8A39 /* Default-568h@2x.png */; };
+		4F1AC24F2136C45200CF8A39 /* MyThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AC24E2136C45200CF8A39 /* MyThread.m */; };
+		4F1AC2552136D43200CF8A39 /* RunloopViewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AC2542136D43200CF8A39 /* RunloopViewClass.m */; };
+		4F1AC2592136DC9000CF8A39 /* ThreadStudy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1AC2582136DC9000CF8A39 /* ThreadStudy.m */; };
 		4F2441DC212C46F600581183 /* YuXinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2441DB212C46F600581183 /* YuXinSDK.framework */; };
 		4F24420A212C556100581183 /* King.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F244209212C556000581183 /* King.framework */; };
-		4F2EFED0210F692800E257C6 /* UIScrollView+TouchDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2EFECF210F692800E257C6 /* UIScrollView+TouchDraw.m */; };
 		4F3050022100630600C33F1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3050012100630600C33F1B /* AppDelegate.m */; };
 		4F3050052100630600C33F1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3050042100630600C33F1B /* ViewController.m */; };
 		4F3050082100630600C33F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3050062100630600C33F1B /* Main.storyboard */; };
@@ -21,8 +23,6 @@
 		4F3050252100630900C33F1B /* TestViewActionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3050242100630900C33F1B /* TestViewActionUITests.m */; };
 		4F4C12B621105274006A7A62 /* UIVDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C12B521105274006A7A62 /* UIVDelegate.m */; };
 		4F821EEC210E1400001B2D42 /* BlockSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F821EEB210E1400001B2D42 /* BlockSample.m */; };
-		4F821EF4210EB5E6001B2D42 /* UINavigationBar+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F821EF3210EB5E6001B2D42 /* UINavigationBar+Alpha.m */; };
-		4F821EF7210EB60C001B2D42 /* UIViewController+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F821EF6210EB60C001B2D42 /* UIViewController+Alpha.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +44,14 @@
 
 /* Begin PBXFileReference section */
 		4F1AC2402135A10200CF8A39 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4F1AC24D2136C45200CF8A39 /* MyThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyThread.h; sourceTree = "<group>"; };
+		4F1AC24E2136C45200CF8A39 /* MyThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyThread.m; sourceTree = "<group>"; };
+		4F1AC2532136D43200CF8A39 /* RunloopViewClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopViewClass.h; sourceTree = "<group>"; };
+		4F1AC2542136D43200CF8A39 /* RunloopViewClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopViewClass.m; sourceTree = "<group>"; };
+		4F1AC2572136DC9000CF8A39 /* ThreadStudy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadStudy.h; sourceTree = "<group>"; };
+		4F1AC2582136DC9000CF8A39 /* ThreadStudy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadStudy.m; sourceTree = "<group>"; };
 		4F2441DB212C46F600581183 /* YuXinSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YuXinSDK.framework; sourceTree = "<group>"; };
 		4F244209212C556000581183 /* King.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = King.framework; sourceTree = "<group>"; };
-		4F2EFECE210F692800E257C6 /* UIScrollView+TouchDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TouchDraw.h"; sourceTree = "<group>"; };
-		4F2EFECF210F692800E257C6 /* UIScrollView+TouchDraw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TouchDraw.m"; sourceTree = "<group>"; };
 		4F304FFD2100630600C33F1B /* TestViewAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestViewAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3050002100630600C33F1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F3050012100630600C33F1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,10 +72,6 @@
 		4F4C12B521105274006A7A62 /* UIVDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIVDelegate.m; sourceTree = "<group>"; };
 		4F821EEA210E1400001B2D42 /* BlockSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockSample.h; sourceTree = "<group>"; };
 		4F821EEB210E1400001B2D42 /* BlockSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockSample.m; sourceTree = "<group>"; };
-		4F821EF2210EB5E6001B2D42 /* UINavigationBar+Alpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Alpha.h"; sourceTree = "<group>"; };
-		4F821EF3210EB5E6001B2D42 /* UINavigationBar+Alpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Alpha.m"; sourceTree = "<group>"; };
-		4F821EF5210EB60C001B2D42 /* UIViewController+Alpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alpha.h"; sourceTree = "<group>"; };
-		4F821EF6210EB60C001B2D42 /* UIViewController+Alpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alpha.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,26 +101,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F1AC238213592F400CF8A39 /* 2.Delegate */ = {
+		4F1AC238213592F400CF8A39 /* 3.Delegate */ = {
 			isa = PBXGroup;
 			children = (
 				4F4C12B421105274006A7A62 /* UIVDelegate.h */,
 				4F4C12B521105274006A7A62 /* UIVDelegate.m */,
 			);
-			path = 2.Delegate;
-			sourceTree = "<group>";
-		};
-		4F1AC2392135930300CF8A39 /* 3.Category */ = {
-			isa = PBXGroup;
-			children = (
-				4F2EFECE210F692800E257C6 /* UIScrollView+TouchDraw.h */,
-				4F2EFECF210F692800E257C6 /* UIScrollView+TouchDraw.m */,
-				4F821EF2210EB5E6001B2D42 /* UINavigationBar+Alpha.h */,
-				4F821EF3210EB5E6001B2D42 /* UINavigationBar+Alpha.m */,
-				4F821EF5210EB60C001B2D42 /* UIViewController+Alpha.h */,
-				4F821EF6210EB60C001B2D42 /* UIViewController+Alpha.m */,
-			);
-			path = 3.Category;
+			path = 3.Delegate;
 			sourceTree = "<group>";
 		};
 		4F1AC23A2135930D00CF8A39 /* 4.Block */ = {
@@ -139,6 +126,26 @@
 				4F244209212C556000581183 /* King.framework */,
 			);
 			path = 5.frameworks;
+			sourceTree = "<group>";
+		};
+		4F1AC2492136C38900CF8A39 /* 1.RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				4F1AC2532136D43200CF8A39 /* RunloopViewClass.h */,
+				4F1AC2542136D43200CF8A39 /* RunloopViewClass.m */,
+				4F1AC24D2136C45200CF8A39 /* MyThread.h */,
+				4F1AC24E2136C45200CF8A39 /* MyThread.m */,
+			);
+			path = 1.RunLoop;
+			sourceTree = "<group>";
+		};
+		4F1AC2562136DC6F00CF8A39 /* 2.Thread */ = {
+			isa = PBXGroup;
+			children = (
+				4F1AC2572136DC9000CF8A39 /* ThreadStudy.h */,
+				4F1AC2582136DC9000CF8A39 /* ThreadStudy.m */,
+			);
+			path = 2.Thread;
 			sourceTree = "<group>";
 		};
 		4F304FF42100630600C33F1B = {
@@ -167,8 +174,9 @@
 			children = (
 				4F3050032100630600C33F1B /* ViewController.h */,
 				4F3050042100630600C33F1B /* ViewController.m */,
-				4F1AC238213592F400CF8A39 /* 2.Delegate */,
-				4F1AC2392135930300CF8A39 /* 3.Category */,
+				4F1AC2492136C38900CF8A39 /* 1.RunLoop */,
+				4F1AC2562136DC6F00CF8A39 /* 2.Thread */,
+				4F1AC238213592F400CF8A39 /* 3.Delegate */,
 				4F1AC23A2135930D00CF8A39 /* 4.Block */,
 				4F1AC23B213595B400CF8A39 /* 5.frameworks */,
 				4F30503821006A5300C33F1B /* supporfiles */,
@@ -339,13 +347,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F821EF7210EB60C001B2D42 /* UIViewController+Alpha.m in Sources */,
 				4F4C12B621105274006A7A62 /* UIVDelegate.m in Sources */,
+				4F1AC2592136DC9000CF8A39 /* ThreadStudy.m in Sources */,
 				4F821EEC210E1400001B2D42 /* BlockSample.m in Sources */,
-				4F2EFED0210F692800E257C6 /* UIScrollView+TouchDraw.m in Sources */,
 				4F3050052100630600C33F1B /* ViewController.m in Sources */,
+				4F1AC24F2136C45200CF8A39 /* MyThread.m in Sources */,
+				4F1AC2552136D43200CF8A39 /* RunloopViewClass.m in Sources */,
 				4F3050102100630900C33F1B /* main.m in Sources */,
-				4F821EF4210EB5E6001B2D42 /* UINavigationBar+Alpha.m in Sources */,
 				4F3050022100630600C33F1B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
