@@ -14,6 +14,53 @@
 
     [self E_Test];
 }
+-(void)D_NstringMutable
+{
+    NSMutableString *str = [NSMutableString stringWithString:@"string"];
+    
+    //////////插入//////////
+    [str insertString:@"123" atIndex:2];
+    NSLog(@"%@", str);
+    //输出:   st123ring
+    
+    
+    //////////删除//////////
+    [str deleteCharactersInRange:NSMakeRange(2, 2)];
+    NSLog(@"%@", str);
+    //输出:   st3ring
+    
+    
+    //////////拼接//////////
+    [str appendString:@"456"];
+    NSLog(@"%@", str);
+    //输出:   st3ring456
+    
+    
+    //////////格式化拼接//////////
+    [str appendFormat:@"7 89"];
+    NSLog(@"%@", str);
+    //输出:   st3ring4567 89
+    
+    
+    //////////设置新字符串//////////
+    [str setString:@"string"];
+    NSLog(@"%@", str);
+    //输出:   string
+    
+    //////////字符串替换//////////
+    //1.指定范围替换
+    [str replaceCharactersInRange:NSMakeRange(2, 2) withString:@"123"];
+    NSLog(@"%@", str);
+    //输出:   st123ng
+    
+    
+    //2.指定字符串,条件,范围替换
+    [str replaceOccurrencesOfString:@"123" withString:@"--" options:NSRegularExpressionSearch range:NSMakeRange(0, str.length)];
+    NSLog(@"%@", str);
+    //输出:   st--ng
+    
+    
+}
 -(void)A_test
 {
     // 1. + (instancetype)string;
@@ -231,53 +278,7 @@
     //写入到指定路径,编码的文件中
 
 }
--(void)D_NstringMutable
-{
-    NSMutableString *str = [NSMutableString stringWithString:@"string"];
-    
-    //////////插入//////////
-    [str insertString:@"123" atIndex:2];
-    NSLog(@"%@", str);
-    //输出:   st123ring
-    
-    
-    //////////删除//////////
-    [str deleteCharactersInRange:NSMakeRange(2, 2)];
-    NSLog(@"%@", str);
-    //输出:   st3ring
-    
-    
-    //////////拼接//////////
-    [str appendString:@"456"];
-    NSLog(@"%@", str);
-    //输出:   st3ring456
-    
-    
-    //////////格式化拼接//////////
-    [str appendFormat:@"7 89"];
-    NSLog(@"%@", str);
-    //输出:   st3ring4567 89
-    
-    
-    //////////设置新字符串//////////
-    [str setString:@"string"];
-    NSLog(@"%@", str);
-    //输出:   string
-    
-    //////////字符串替换//////////
-    //1.指定范围替换
-    [str replaceCharactersInRange:NSMakeRange(2, 2) withString:@"123"];
-    NSLog(@"%@", str);
-    //输出:   st123ng
-    
-    
-    //2.指定字符串,条件,范围替换
-    [str replaceOccurrencesOfString:@"123" withString:@"--" options:NSRegularExpressionSearch range:NSMakeRange(0, str.length)];
-    NSLog(@"%@", str);
-    //输出:   st--ng
-    
 
-}
 -(void)E_Test
 {
    // NSString *str1=[[NSString alloc]init];

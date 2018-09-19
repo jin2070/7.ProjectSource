@@ -13,6 +13,11 @@
 #import "NSarrayTools.h"
 //3.NSDictionary
 #import "NSDictionaryTools.h"
+//4.Sqlite
+#import "SqlServiceClass.h"
+#import "SqliteView.h"
+//5.Create File Path
+#import "CreateFilePath.h"
 
 @interface ViewController ()
 
@@ -24,7 +29,7 @@
 {
  
   //  DrawingSomothing *drawsome=[[DrawingSomothing alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [self initializeClass:3];
+    [self initializeClass:4];
 }
 -(void)initializeClass:(NSInteger)select
 {
@@ -38,8 +43,11 @@
         case 3: //NSDictionary
             [self C_NSDictionaryShwothim];
             break;
-        case 5://5.Frameworks
-         //   [self E_Delegae];
+        case 4: //Sqlite
+            [self D_Sqlite];
+            break;
+        case 5://Create File and Path
+            [self E_FilePath];
             break;
         case 6://6.DrawingMethod
           //  [self F_DrawingMethod];
@@ -71,7 +79,29 @@
     [ndTools ShowTime];
     
 }
-//3.NSDictionary
 
-
+//5.Create File & Path
+-(void)E_FilePath
+{
+    CreateFilePath *filePath=[[CreateFilePath alloc] init];
+    [filePath PrintNSlog];
+  
+    NSString *libaryFile=[CreateFilePath getDocumentPath];
+  //NSString *applicationPath=[CreateFilePath getApplicationPath];
+    //BOOL check=[CreateFilePath fileIsExistOfPath:@"/Users/pc/Documents/sqlite/or01txt"];
+    NSLog(@"what is the libaryFile: %@",libaryFile);
+    //NSLog(@"what is the libaryFile: %@",applicationPath);
+    //NSLog(@"is it yes: %@",check?@"yes":@"no");
+}
+//4.SQLite
+-(void)D_Sqlite
+{
+    /*
+       SqlServiceClass *sqlservice=[[SqlServiceClass alloc]init];
+    [sqlservice openDB];
+    SqliteView *sqliteview=[[SqliteView alloc]initWithFrame:CGRectMake(10, 100, 360, 620)];
+    sqliteview.backgroundColor=[UIColor lightGrayColor];
+    [self.view addSubview:sqliteview];
+*/
+}
 @end
