@@ -11,7 +11,7 @@
 @implementation NSDictionaryTools
 -(void)ShowTime
 {
-    [self A_Test];
+    [self B_Test];
 }
 -(void)A_Test
 {

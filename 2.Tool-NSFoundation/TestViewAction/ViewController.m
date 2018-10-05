@@ -15,10 +15,17 @@
 #import "NSDictionaryTools.h"
 //4.Sqlite
 #import "SqlServiceClass.h"
-#import "SqliteView.h"
+//#import "SqliteView.h"
+#import "SqlPersentView.h"
 //5.Create File Path
 #import "CreateFilePath.h"
 
+//6.NSBundle
+#import "NSbundleTest.h"
+//7.FMDatabase
+//#import "FMDataView.h"
+//8.UserDefulat
+#import "UserDefualtsTest.h"
 @interface ViewController ()
 
 @end
@@ -29,7 +36,7 @@
 {
  
   //  DrawingSomothing *drawsome=[[DrawingSomothing alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [self initializeClass:4];
+    [self initializeClass:8];
 }
 -(void)initializeClass:(NSInteger)select
 {
@@ -49,11 +56,14 @@
         case 5://Create File and Path
             [self E_FilePath];
             break;
-        case 6://6.DrawingMethod
-          //  [self F_DrawingMethod];
+        case 6:////6.NSbundle
+            [self F_NSBundleTest];
             break;
-        case 7:
-          //  [self G_ButtonsMethods];
+        case 7://7.FMDatabase
+            [self G_FMDatabase];
+            break;
+        case 8://NSUserDefult
+            [self H_UserDefulat];
             break;
         default:
             break;
@@ -79,29 +89,49 @@
     [ndTools ShowTime];
     
 }
-
-//5.Create File & Path
--(void)E_FilePath
-{
-    CreateFilePath *filePath=[[CreateFilePath alloc] init];
-    [filePath PrintNSlog];
-  
-    NSString *libaryFile=[CreateFilePath getDocumentPath];
-  //NSString *applicationPath=[CreateFilePath getApplicationPath];
-    //BOOL check=[CreateFilePath fileIsExistOfPath:@"/Users/pc/Documents/sqlite/or01txt"];
-    NSLog(@"what is the libaryFile: %@",libaryFile);
-    //NSLog(@"what is the libaryFile: %@",applicationPath);
-    //NSLog(@"is it yes: %@",check?@"yes":@"no");
-}
 //4.SQLite
 -(void)D_Sqlite
 {
-    /*
-       SqlServiceClass *sqlservice=[[SqlServiceClass alloc]init];
+    
+  /*
+    SqlServiceClass *sqlservice=[[SqlServiceClass alloc]init];
     [sqlservice openDB];
     SqliteView *sqliteview=[[SqliteView alloc]initWithFrame:CGRectMake(10, 100, 360, 620)];
     sqliteview.backgroundColor=[UIColor lightGrayColor];
     [self.view addSubview:sqliteview];
 */
+  //  SqlPersentView *persentview=[
+}
+//5.Create File & Path
+-(void)E_FilePath
+{
+
+    CreateFilePath *filePath=[[CreateFilePath alloc] init];
+    [filePath PrintNSlog];
+    
+  //  NSString *libaryFile=[CreateFilePath getDocumentPath];
+    //NSString *applicationPath=[CreateFilePath getApplicationPath];
+    //BOOL check=[CreateFilePath fileIsExistOfPath:@"/Users/pc/Documents/sqlite/or01txt"];
+    //NSLog(@"what is the libaryFile: %@",libaryFile);
+    //NSLog(@"what is the libaryFile: %@",applicationPath);
+    //NSLog(@"is it yes: %@",check?@"yes":@"no");
+}
+//6.NSbundle
+-(void)F_NSBundleTest
+{
+    NSbundleTest *bundleTest=[[NSbundleTest alloc]initWithFrame:CGRectMake(10, 50, 300, 400)];
+    bundleTest.backgroundColor=[UIColor lightGrayColor];
+    [self.view addSubview:bundleTest];
+    
+}
+//7.FMDatabase
+-(void)G_FMDatabase
+{
+    
+}
+-(void)H_UserDefulat
+{
+    UserDefualtsTest *userdefualtsTest=[[UserDefualtsTest alloc]init];
+    [userdefualtsTest A_ShowTime];
 }
 @end

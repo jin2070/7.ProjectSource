@@ -49,12 +49,16 @@ static NSString *identifier =@"TableViewCell";
    //UITableViewCell *cell = [self.tableViewShow dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath.row];
     UITableViewCell *cell=[self.tableViewShow dequeueReusableCellWithIdentifier:identifier];
     //为单元格的label设置数据
-    
+    if(cell==nil){
+        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
+    }
     cell.textLabel.text = [self.tableDataArr objectAtIndex:indexPath.row];
-    
+    cell.detailTextLabel.text=@"hello";
     NSLog(@"indexPath:%@",indexPath);
  //   NSLog(@"Row....:%l",indexPath.row);
     cell.imageView.image=[UIImage imageNamed:@"008.png"];
+
+    
 
     return cell;
 }

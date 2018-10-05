@@ -5,17 +5,13 @@
 //  Created by pc on 2018/9/13.
 //  Copyright © 2018年 Jinchuncheng. All rights reserved.
 //
-
+//sql操作功能，建立、增加、删除等。
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
 #define kFilename  @"testdb.db"
 @class sqlTestList;
 @interface sqlTestList : NSObject//重新定义了一个类，专门用于存储数据
-//{
-//    int sqlID;
-//    NSString *sqlText;
-//    NSString *sqlname;
-//}
+
 
 @property (nonatomic) int sqlID;
 @property (nonatomic, retain) NSString *sqlText;

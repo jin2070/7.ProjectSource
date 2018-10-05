@@ -12,6 +12,10 @@
 #import "Base.h"
 //2.TableView
 #import "A-TableView.h"
+//3.UItextMethod
+#import "UITextMethod.h"
+//4.DefineSizeLocationPointMove
+#import "DefineSizeLocation.h"
 //7.ButtonsMethods
 #import "ButtonActions.h"
 
@@ -30,7 +34,7 @@
 {
     
     //  DrawingSomothing *drawsome=[[DrawingSomothing alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [self initializeClass:2];
+    [self initializeClass:4];
 }
 -(void)initializeClass:(NSInteger)select
 {
@@ -41,7 +45,12 @@
         case 2://1.TouchViewfromScroll
             [self B_TableView];
             break;
-            
+        case 3://1.TouchViewfromScroll
+            [self C_UITextMethod];
+            break;
+        case 4://DefineSizePointLocationFrame
+            [self D_DefineSize];
+            break;
         case 7:
             [self G_ButtonsMethods];
             break;
@@ -64,7 +73,17 @@
 {
     
 }
-
+-(void)C_UITextMethod
+{
+    UITextMethod *textMethod=[[UITextMethod alloc]init];
+    [textMethod C_ReadSqlFile];
+}
+//4.DefineSizeLocationPointMove
+-(void)D_DefineSize
+{
+    DefineSizeLocation *defineSize=[[DefineSizeLocation alloc]init];
+    
+}
 //7.ButtonsMethods
 -(void)G_ButtonsMethods
 {

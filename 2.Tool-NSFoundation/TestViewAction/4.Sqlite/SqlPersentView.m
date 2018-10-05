@@ -7,7 +7,7 @@
 //
 
 #import "SqlPersentView.h"
-#import "Operator.h"
+//#import "Operator.h"
 
 @interface SqlPersentView ()
 
@@ -67,22 +67,22 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"indexPath.row;%l",indexPath.row);
+    NSLog(@"indexPath.row;%ld",indexPath.row);
     NSString *CustomIdentifier =  [NSString stringWithFormat:@"cell%ld",(long)indexPath.row];
     NSLog(@"customidentifier:%@",CustomIdentifier);
     //cell不重用
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CustomIdentifier];
-    NSLog(@"indexPath.row;%l",indexPath.row);
+    NSLog(@"indexPath.row;%ld",indexPath.row);
     if (indexPath.row == 0)
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    NSLog(@"indexPath.row;%l",indexPath.row);
+    NSLog(@"indexPath.row;%ld",indexPath.row);
     if ( cell == nil ) {
         // cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
         //     reuseIdentifier:CustomIdentifier] autorelease];
         cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
         cell.backgroundColor = [UIColor clearColor];
     }
-    NSLog(@"indexPath.row;%l",indexPath.row);
+    NSLog(@"indexPath.row;%ld",indexPath.row);
     if (indexPath.row > 0)
     {
         NSUInteger row = [indexPath row];

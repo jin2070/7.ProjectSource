@@ -11,6 +11,6 @@
 @interface B_TableView : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @property(strong,nonatomic)NSArray *listData;
 @property(strong,nonatomic)IBOutlet UITableView *tableView;
-@property(strong,nonatomic)UITableViewCell *tableViewCell;
+//@property(strong,nonatomic)UITableViewCell *tableViewCell;
 
 @end
