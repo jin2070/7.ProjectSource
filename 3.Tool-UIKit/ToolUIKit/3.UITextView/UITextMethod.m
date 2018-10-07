@@ -21,7 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBar.barStyle=UIBarStyleBlack;
+    self.navigationController.navigationItem.title=@"瞰视";
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [self C_ReadSqlFile];
 }
 -(void)C_ReadSqlFile
@@ -44,7 +46,7 @@
 }
     FMResultSet *rs;
     int i=0;
-    rs = [db executeQuery:@"select *from aa"];
+    rs = [db executeQuery:@"select *from aa[se"];
     while ([rs next]) {
         if(i==5)
         {

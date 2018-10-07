@@ -29,13 +29,21 @@
 @end
 
 @implementation ViewController
-
+-(void)viewWillAppear:(BOOL)animated
+{
+  //  self.navigationController.navigationBar.barTintColor=[UIColor yellowColor];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"007.jpg"] forBarMetrics:UIBarMetricsDefault];
+}
 -(void)viewDidLoad
 {
-    
-    //  DrawingSomothing *drawsome=[[DrawingSomothing alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    self.navigationController.navigationBar.barTintColor=[UIColor redColor];
+//    UINavigationBar *navigationBar = [UINavigationBar appearance];
+    //设置导航栏背景颜色
+
     [self initializeClass:4];
 }
+
+
 -(void)initializeClass:(NSInteger)select
 {
     switch (select) {

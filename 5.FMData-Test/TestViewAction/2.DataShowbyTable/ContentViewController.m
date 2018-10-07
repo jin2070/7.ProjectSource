@@ -28,7 +28,7 @@
         self.hasVerse = true;
     
     self.oldVelocity = -1000;
-    
+   
 }
 - (void)viewDidLoad {
     
@@ -128,15 +128,45 @@
     self.myTextView.font=[UIFont systemFontOfSize:20];
     [self.view addSubview:self.myTextView];
     [dataBaseSql close];
+     [self initGestureAlloc];
     [super viewDidLoad];
     
     
     // Do any additional setup after loading the view.
 }
+-(void)initGestureAlloc
+{
+    UISwipeGestureRecognizer  *recognizerLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleLeftSwipeFrom:)];
+    [recognizerLeft setDirection:UISwipeGestureRecognizerDirectionLeft];
+    [[self view] addGestureRecognizer:recognizerLeft];
+  
+    UISwipeGestureRecognizer  *recognizerRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleRightSwipeFrom:)];
+    [recognizerRight setDirection:UISwipeGestureRecognizerDirectionRight];
+    [[self view] addGestureRecognizer:recognizerRight];
+   // [recognizerRight release];
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark -
+#pragma mark HandleAction
+-(void)handleLeftSwipeFrom:(UISwipeGestureRecognizer *)recogizer
+{
+    NSDictionary* dict = nil;
+    dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:UISwipeGestureRecognizerDirectionLeft] forKey:@"direction"];
+    
+    if (dict)
+        [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"%@%@", @"swipeNotify", self.booksName] object:self userInfo:dict];
+}
+-(void)handleRightSwipeFrom:(UISwipeGestureRecognizer *)recognizer
+{
+    //NSLog(@"handleRightSwipeFrom received: %d", recognizer.direction);
+    
+    NSDictionary* dict = nil;
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+        dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:UISwipeGestureRecognizerDirectionRight] forKey:@"direction"];
+    
+    if (dict)
+        [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"%@%@", @"swipeNotify", self.booksName] object:self userInfo:dict];
+    
 }
 
 /*
@@ -148,5 +178,8 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 @end

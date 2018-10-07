@@ -29,6 +29,7 @@ static NSString *identifier =@"TableViewCell";
     
 }
 
+
 - (void)loadData {
     //初始化数组
     self.tableDataArr = [NSMutableArray array];
